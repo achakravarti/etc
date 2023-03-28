@@ -1,0 +1,5 @@
+xrdb -merge ~/.Xresources
+. ~/.profile
+openbsd-wallpaper
+exec cwm
+

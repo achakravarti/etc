@@ -1,0 +1,30 @@
+# $OpenBSD: dot.profile,v 1.8 2022/08/10 07:40:37 tb Exp $
+#
+# sh/ksh initialization
+
+PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
+export PATH HOME TERM
+export PAGER="most -s"
+
+blue()
+{
+	print "\033[1;34m"
+}
+
+reset()
+{
+	print "\033[0m"
+}
+
+export LC_CTYPE="C.UTF-8"
+
+export PS1="$(blue)\A \u@\h:\W $ $(reset)"
+alias ls='ls -F'
+alias tmux='tmux -u'
+
+PATH="/home/abhishek/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/abhishek/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/abhishek/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/abhishek/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/abhishek/perl5"; export PERL_MM_OPT;
+

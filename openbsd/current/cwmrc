@@ -1,0 +1,26 @@
+sticky yes
+fontname "spleen:pixelsize=16"
+gap 8 128 8 8
+htile 50
+vtile 50
+unbind-key all
+bind-key 4-f window-fullscreen
+bind-key 4-m window-maximize
+bind-key 4-n window-hide
+bind-key 4-t window-vtile
+bind-key 4S-t window-htile
+bind-key 4-q window-close
+bind-key 4-Return xterm
+bind-key 4-space menu-exec
+bind-key 4S-q quit
+bind-key 4S-r restart
+bind-key 4-Tab window-cycle
+bind-key 4S-Tab window-rcycle
+bind-key 4-h window-move-left
+bind-key 4S-h window-move-left-big
+bind-key 4-j window-move-down
+bind-key 4S-j window-move-down-big
+bind-key 4-k window-move-up
+bind-key 4S-k window-move-up-big
+bind-key 4-l window-move-right
+bind-key 4S-l window-move-right-big
