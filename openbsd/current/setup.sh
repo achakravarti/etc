@@ -15,7 +15,7 @@ upgrade_current()
 
 install_pkg()
 {
-	pkgs="git emacs--gtk3 firefox texlive_texmf-minimal spleen"
+	pkgs="git emacs--gtk3 chromium vimb texlive_texmf-minimal spleen"
 	pkgs="$pkgs openbsd-bacgkrounds most node clang-tools-extra fdm mu"
 	pkg_add "$pkgs" || pkg_add -Dsnap "$pkgs"
 }
